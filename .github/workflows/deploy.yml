@@ -3,8 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - ci_cd  # or 'master' if that's your default branch
-
+      - ci_cd
+  workflow_dispatch:
 jobs:
   deploy:
     runs-on: ubuntu-latest
